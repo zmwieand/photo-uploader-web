@@ -50,7 +50,7 @@ export default function SignIn() {
       formData.append(`file`, photos[i]);
 
       // TODO: make URL configurable in REACT_APP_* env vars
-      const response = await fetch('http://localhost:8000/upload', {
+      const response = await fetch('https://photo-api.thewieands.com/upload', {
         method: 'POST',
         body: formData,
       });
